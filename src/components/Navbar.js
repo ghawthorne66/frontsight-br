@@ -4,7 +4,7 @@ import styles from "../css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
-import logo from "../images/logo.svg"
+import logo from "../images/fsimages/frontsight_logo_175x30.png"
 const Navbar = () => {
   const [isOpen, setNav] = useState()
   const toggleNav = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <img src={logo} alt="backroads logo" />
+          <img src={logo} alt="frontsight logo" />
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />
           </button>
@@ -35,6 +35,7 @@ const Navbar = () => {
             )
           })}
         </ul>
+        <div>Call Us</div>
         <div className={styles.navSocialLinks}>
           {socialIcons.map((item, index) => {
             return (

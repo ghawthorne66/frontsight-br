@@ -4,8 +4,12 @@ export default [
     text: "home",
   },
   {
-    path: "/tours",
-    text: "tours",
+   path: "about us",
+   text: "about us",
+ },
+  {
+    path: "/services",
+    text: "services",
   },
   {
     path: "/blog",
@@ -14,5 +18,6 @@ export default [
   {
     path: "/contact",
     text: "contact",
-  },
+  }
+  
 ]

@@ -1,20 +1,20 @@
 import React from "react"
-import { FaWallet, FaTree, FaSocks } from "react-icons/fa"
+import { FaBullseye, FaSearchLocation, FaChartLine } from "react-icons/fa"
 
 export default [
   {
-    icon: <FaWallet />,
-    title: "saving money",
+    icon: <FaBullseye />,
+    title: "Target your best clients",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null",
   },
   {
-    icon: <FaTree />,
-    title: "endless hiking",
+    icon: <FaSearchLocation />,
+    title: "get found on all search engines",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null",
   },
   {
-    icon: <FaSocks />,
-    title: "amazing comfort",
+    icon: <FaChartLine />,
+    title: "know your traffic and increase your bottom line",
     text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Null",
   },
 ]

@@ -13,7 +13,7 @@ const About = () => {
           </div>
         </article>
         <article className={styles.aboutInfo}>
-          <h4>explore the difference</h4>
+          <h4>Why we're a cut above</h4>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
             doloribus enim necessitatibus?
