@@ -8,8 +8,8 @@ export default [
    text: "about us",
  },
   {
-    path: "/services",
-    text: "services",
+    path: "/tours",
+    text: "tours",
   },
   {
     path: "/blog",
