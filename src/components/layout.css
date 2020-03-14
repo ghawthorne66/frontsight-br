@@ -7,6 +7,7 @@
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
+  --grey: grey;
   --mainTransition: all 0.3s linear;
   --mainSpacing: 4px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
@@ -36,19 +37,19 @@ h6 {
   margin-bottom: 1.25rem;
   letter-spacing: var(--mainSpacing);
 }
+a {
+  text-decoration: none;
+}
 p {
   margin-bottom: 1.25rem;
 }
 .defaultHero {
-  min-height: calc(80vh - 62px);
+  min-height: calc(100vh - 62px);
   background: linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7)),
     url("../images/defaultBcg.jpeg") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: initial;
-  background-attachment: fixed;
-  background-position: center center;
 }
 .btn-white,
 .btn-primary {
@@ -79,4 +80,7 @@ main {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+.rich {
+  background: var(--primaryColor);
 }
