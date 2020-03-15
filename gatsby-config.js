@@ -7,12 +7,12 @@ module.exports = {
   description:
     "Looking for a professional plumber marketing company? Look no further than Front Sight Marketing. Learn more about our web design and pay per click services for hvac and plumbing companies!",
   author: "@toddhagler",
-  data: {
-    name: "Todd Hagler",
-    age: 45
-  },
+  twitterUsername: "@fronsightseo",
+  image: '/frontsight_logo_horizontal.png',
+  siteUrl: 'https://fronsightmarketing.com'
  },
  plugins: [
+  `gatsby-plugin-react-helmet`,
   {
     resolve: `gatsby-source-filesystem`,
     options: {
@@ -34,6 +34,7 @@ module.exports = {
   `gatsby-plugin-styled-components`,
   `gatsby-plugin-transition-link`,
   `gatsby-plugin-playground`,
+  
 ],
 }
 
