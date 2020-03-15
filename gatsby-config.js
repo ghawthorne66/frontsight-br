@@ -7,7 +7,7 @@ module.exports = {
   description:
     "Looking for a professional plumber marketing company? Look no further than Front Sight Marketing. Learn more about our web design and pay per click services for hvac and plumbing companies!",
   author: "@toddhagler",
-  twitterUsername: "@fronsightseo",
+  twitterUsername: "@frontsightseo",
   image: "/images/fsimages/contractor_marketing_company_small.png",
   siteUrl: 'https://frontsightmarketing.com',
  },
