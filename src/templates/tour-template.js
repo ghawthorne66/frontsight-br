@@ -85,6 +85,7 @@ query ($slug:String!) {
   images {
     fluid{
       src
+     
     }
     
   }
