@@ -4,10 +4,6 @@ export default [
     text: "home",
   },
   {
-   path: "about us",
-   text: "about us",
- },
-  {
     path: "/tours",
     text: "tours",
   },
@@ -15,6 +11,10 @@ export default [
     path: "/blog",
     text: "blog",
   },
+  {
+   path: "/blogs",
+   text: "blogs",
+ },
   {
     path: "/contact",
     text: "contact",
