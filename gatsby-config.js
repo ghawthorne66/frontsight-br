@@ -8,8 +8,8 @@ module.exports = {
     "Looking for a professional plumber marketing company? Look no further than Front Sight Marketing. Learn more about our web design and pay per click services for hvac and plumbing companies!",
   author: "@toddhagler",
   twitterUsername: "@fronsightseo",
-  image: '/frontsight_logo_horizontal.png',
-  siteUrl: 'https://fronsightmarketing.com'
+  image: '/defaultBcgA.jpeg',
+  siteUrl: 'https://frontsight-br.netlify.com'
  },
  plugins: [
   `gatsby-plugin-react-helmet`,
