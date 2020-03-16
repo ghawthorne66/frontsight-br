@@ -5,7 +5,7 @@ export default [
   },
   {
     path: "/tours",
-    text: "tours",
+    text: "services",
   },
   {
     path: "/blog",

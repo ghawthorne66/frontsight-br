@@ -8,6 +8,9 @@ import Services from "../components/Home/Services"
 import StyledHero from "../components/StyledHero"
 import FeaturedTours from "../components/Home/FeaturedTours"
 import SEO from '../components/SEO'
+import Video from '../components/Home/Video'
+import ResponsivePlayer from "../components/video/ResponsivePlayer"
+
 export default ({ data }) => (
 
   <Layout>
@@ -17,6 +20,7 @@ export default ({ data }) => (
         title="Internet Marketing for HVAC Contractors"
         info=" Tired of wasting money on mediocre results in your marketing? Congratulations, you've found the solution"
       >
+      <ResponsivePlayer />
         <AniLink fade to="/tours" className="btn-white">
           Learn More
         </AniLink>
