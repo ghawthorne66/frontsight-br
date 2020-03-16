@@ -4,7 +4,6 @@ import Layout from "../components/Layout"
 import styles from "../css/single-blog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-import { log } from "util"
 import SEO from '../components/SEO'
 
 const Blog = ({ data }) => {

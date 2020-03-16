@@ -8,7 +8,6 @@ import Services from "../components/Home/Services"
 import StyledHero from "../components/StyledHero"
 import FeaturedTours from "../components/Home/FeaturedTours"
 import SEO from '../components/SEO'
-import Video from '../components/Home/Video'
 import ResponsivePlayer from "../components/video/ResponsivePlayer"
 
 export default ({ data }) => (
