@@ -8,7 +8,7 @@ import Services from "../components/Home/Services"
 import StyledHero from "../components/StyledHero"
 import FeaturedTours from "../components/Home/FeaturedTours"
 import SEO from '../components/SEO'
-import ResponsivePlayer from "../components/video/ResponsivePlayer"
+import ResponsivePlayer from "../components/ResponsivePlayer"
 
 export default ({ data }) => (
 
@@ -16,10 +16,10 @@ export default ({ data }) => (
    <SEO title="Home" />
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <Banner
-        title="Internet Marketing for HVAC Contractors"
+        title="Digital Marketing for the HVAC Business"
         info=" Tired of wasting money on mediocre results in your marketing? Congratulations, you've found the solution"
       >
-      <ResponsivePlayer />
+    <ResponsivePlayer />
         <AniLink fade to="/tours" className="btn-white">
           Learn More
         </AniLink>
