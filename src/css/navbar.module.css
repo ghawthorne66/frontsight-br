@@ -4,9 +4,7 @@
   z-index: 2;
   border-bottom: 1px solid var(--lightGrey);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
-
 }
-
 .nav-header {
  display: flex;
  justify-content: space-between;
@@ -41,7 +39,7 @@ height: 3.25rem;
  overflow: hidden;
 }
 .show-nav {
- /* height: 216px; */
+ height: 216px;
 
 
 }
