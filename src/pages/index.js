@@ -5,6 +5,10 @@ import Layout from "../components/Layout"
 import Banner from "../components/Banner"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
+import Present from "../components/Home/Present"
+
+
+import GradientHero from "../components/GradientHero/GradientHero"
 import StyledHero from "../components/StyledHero"
 import FeaturedTours from "../components/Home/FeaturedTours"
 import SEO from '../components/SEO'
@@ -19,12 +23,13 @@ export default ({ data }) => (
         title="Digital Marketing for the HVAC Business"
         info=" Tired of wasting money on mediocre results in your marketing? Congratulations, you've found the solution"
       >
-    <ResponsivePlayer />
         <AniLink fade to="/tours" className="btn-white">
           Learn More
         </AniLink>
       </Banner>
     </StyledHero>
+   
+    <Present />
     <About />
     <Services />
     <FeaturedTours />

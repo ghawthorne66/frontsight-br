@@ -8,8 +8,8 @@ const ResponsivePlayer = () => {
         <ReactPlayer
           className='react-player'
           url='https://www.youtube.com/watch?v=iBzvi4h13Ok'
-          width='100%'
-          height='100%'
+          width='150%'
+          height='150%'
         />
       </div>
     )

@@ -1,0 +1,96 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.image {
+  
+  float: right;
+  margin-right: 20rem;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-color: #f9f9f9;
+}
+
+.hero-container.skhero1 {
+ margin-top:0rem;
+  background-image: linear-gradient(to top right, #525252, #3d72b4);
+  position: relative;
+  background: #000046; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1cb5e0,
+    #000046
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.hero-container.blhero2 {
+ 
+  padding-bottom: 5px;
+}
+
+.hero-wave,
+.hero-wave:before,
+.hero-wave:after {
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  border-radius: 100% 0 0 0;
+}
+
+.hero-wave {
+  width: 300px;
+  height: 300px;
+  background: rgba(216, 216, 216, 0.1);
+}
+
+.hero-wave:after {
+  content: "";
+  width: 450px;
+  height: 450px;
+  background: rgba(216, 216, 216, 0.1);
+}
+.hero-wave,
+.hero-wave:before,
+.hero-wave:after {
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  border-radius: 100% 0 0 0;
+}
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.hero-container {
+  position: relative;
+  background: linear-gradient(270deg, #525252 0%, #3d72b4 100%);
+  width: 100%;
+  padding: 80px 20px;
+  padding-bottom: 170px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+  -ms-transform: translateY(-58px);
+  transform: translateY(-58px);
+}

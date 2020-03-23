@@ -1,10 +1,11 @@
-import React, { useState } from "react"
-import { Link } from "gatsby"
+import React, { Component, useState } from "react"
+import Sticky from 'react-sticky-el';
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/links"
 import socialIcons from "../constants/social-icons"
-import logo from "../images/fsimages/frontsight_logo_175x30.png"
+import logo from "../images/fsimages/fs_gray_blue.svg"
 const Navbar = () => {
   const [isOpen, setNav] = useState()
   const toggleNav = () => {
@@ -12,10 +13,12 @@ const Navbar = () => {
   }
 
   return (
+   <Sticky>
+   <header>
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <img src={logo} alt="frontsight logo" />
+          <img className={styles.fslogo} src={logo} alt="fronsight logo" />
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />
           </button>
@@ -25,17 +28,21 @@ const Navbar = () => {
             isOpen
               ? `${styles.navLinks} ${styles.showNav}`
               : `${styles.navLinks}`
+             
           }
-        >
+          >
+        
           {links.map((item, index) => {
             return (
               <li key={index}>
-                <Link to={item.path}>{item.text}</Link>
+                <AniLink fade to={item.path}>
+                  {item.text}
+                </AniLink>
               </li>
             )
-          })}
+           })}
+           <li> <a className="phone" href="tel:855-979-9216">855-979-9216</a></li>
         </ul>
-        <div>Call Us</div>
         <div className={styles.navSocialLinks}>
           {socialIcons.map((item, index) => {
             return (
@@ -52,7 +59,13 @@ const Navbar = () => {
         </div>
       </div>
     </nav>
+    </header>
+ </Sticky>
   )
 }
 
 export default Navbar
+
+
+ 
+
