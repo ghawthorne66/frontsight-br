@@ -1,4 +1,5 @@
 import React from "react"
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Title from "../Title"
 import styles from "../../css/about.module.css"
 import img from "../../images/defaultBcg.jpeg"
@@ -22,8 +23,9 @@ const About = () => {
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
             doloribus enim necessitatibus?
           </p>
+         
           <button type="button" className="btn-primary">
-            read more
+          <a href="/about">read more</a>
           </button>
         </article>
       </div>

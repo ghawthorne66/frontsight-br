@@ -12,9 +12,10 @@ const Navbar = () => {
     setNav(isOpen => !isOpen)
   }
 
+
   return (
    <Sticky>
-   <header>
+   <header className={styles.header}>
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
@@ -41,9 +42,9 @@ const Navbar = () => {
               </li>
             )
            })}
-           <li> <a className="phone" href="tel:855-979-9216">855-979-9216</a></li>
+          <a className={styles.phone} href="tel:855-979-9216">(855) 979-9216</a>
         </ul>
-        <div className={styles.navSocialLinks}>
+        {/* <div className={styles.navSocialLinks}>
           {socialIcons.map((item, index) => {
             return (
               <a
@@ -56,7 +57,7 @@ const Navbar = () => {
               </a>
             )
           })}
-        </div>
+        </div> */}
       </div>
     </nav>
     </header>
@@ -65,6 +66,14 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+
+
+
+// ReactDOM.render(
+//  <ScrollAwareDiv />,
+//  document.getElementById('root')
+// );
 
 
  

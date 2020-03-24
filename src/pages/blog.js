@@ -13,10 +13,7 @@ const blog = ({data}) => {
     <Layout>
      <SEO title='Blog' />
      <StyledHero img={data.blogBcg.childImageSharp.fluid} />
-     <BlogBanner
-     title="Blog"
-        
-     />
+     <BlogBanner title="Blog" />
 
     <BlogList />
     </Layout>
