@@ -4,13 +4,12 @@ import "../css/appointment.module.css"
 
 import Layout from "../components/layout"
 import CalendlyEmbed from "../components/CalendlyEmbedReact"
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 
 const Appointment = () => (
   <Layout>
    <section className="section">
-
-    <SEO title="appointments" />
+    <SEO title="appointments"/>
     <h1>Lets Get Started</h1>
     <CalendlyEmbed className="calendly"account="greghawthorne" eventName="discovery-meeting" />
     <Link to="/">Go back to the homepage</Link>
