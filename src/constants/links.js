@@ -13,19 +13,21 @@ export default [
   {
    path: "/services",
    text: "services",
-   
+  
  },
+
  {
   path: "/about",
   text: "about",
   
-},
+ },
+ 
+ {
+  path: "/blog",
+  text: "blog",
+  
+ },
 
-  {
-    path: "/blog",
-    text: "blog",
-    
-  },
  //  {
  //   path: "/blogs",
  //   text: "blogs",
@@ -36,6 +38,11 @@ export default [
     text: "contact",
     
   },
+  {
+   path: "/appointment",
+   text: "Get a Demo",
+  
+ },
  
   
 ]

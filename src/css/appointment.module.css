@@ -1,0 +1,15 @@
+.section {
+ background: var(--primaryColor);
+ min-height: calc(100vh - 62px);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+h1 {
+ background: gray;
+ position: relative;
+ color: white;
+ 
+
+}
