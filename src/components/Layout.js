@@ -2,7 +2,7 @@ import React, { Fragment, useState, useRef } from "react"
 import Navbar from "./Navbar"
 import Footer from "./Footer"
 import "./layout.css"
-import About from "../components/Home/About"
+
 
 
 const Layout = ({ children }) => { 

@@ -5,11 +5,7 @@ export default [
     text: "home",
     
   },
-  // {
-  //   path: "/tours",
-  //   text: "tours",
-    
-  // },
+  
   {
    path: "/services",
    text: "services",
@@ -28,11 +24,6 @@ export default [
   
  },
 
- //  {
- //   path: "/blogs",
- //   text: "blogs",
-   
- // },
   {
     path: "/contact",
     text: "contact",
