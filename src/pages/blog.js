@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
-import Banner from "../components/Banner"
 import { graphql } from 'gatsby'
 import BlogList from '../components/Blog/BlogList'
 import SEO from '../components/SEO'

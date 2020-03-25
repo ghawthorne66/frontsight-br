@@ -1,8 +1,6 @@
 import React from "react"
 import Title from "../Title"
 import styles from "../../css/present.module.css"
-import services from "../../constants/services"
-import YouTube from 'react-youtube';
 import ReactPlayer from 'react-player'
  
 class Video extends React.Component {
@@ -14,6 +12,7 @@ class Video extends React.Component {
         autoplay: -1
       }
     };
+    
  
     return (
      <section className={styles.services}>
