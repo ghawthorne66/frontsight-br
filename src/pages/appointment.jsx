@@ -12,7 +12,7 @@ const Appointment = () => (
     <SEO title="appointments"/>
     <h1>Lets Get Started</h1>
     <CalendlyEmbed className="calendly"account="greghawthorne" eventName="discovery-meeting" />
-    <Link to="/">Go back to the homepage</Link>
+
 
   </Layout>
 )

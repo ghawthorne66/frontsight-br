@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
       <ScrollContainer setScrollStatus={setScrollStatus} scrollStatus={scrollStatus}>
         {children}
       </ScrollContainer>
-      <Footer />
+      <Footer /> 
     </main>
      
     

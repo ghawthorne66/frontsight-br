@@ -29,6 +29,16 @@ export default [
     text: "contact",
     
   },
+  // {
+  //   path: "/pricing",
+  //   text: "pricing",
+    
+  // },
+  // {
+  //   path: "/prices",
+  //   text: "prices",
+    
+  // },
   {
    path: "/appointment",
    text: "Get a Demo",

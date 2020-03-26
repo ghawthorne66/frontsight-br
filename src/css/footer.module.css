@@ -1,15 +1,20 @@
 .footer {
   margin-top: auto;
-  background: var(--mainBlack);
   padding: 2rem;
   text-align: center;
   color: var(--mainWhite);
+  min-height: 100%;
+  background-color: whitesmoke;
+  z-index: 100000;
+  position: sticky;
+  
 }
 .links a {
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--mainWhite);
+  
+  
   margin: 0.5rem 1rem;
   letter-spacing: var(--mainSpacing);
   transition: var(--mainTransition);
