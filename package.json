@@ -20,7 +20,7 @@
     "bootstrap": "^4.3.1",
     "dotenv": "^8.2.0",
     "font-awesome": "^4.7.0",
-    "gatsby": "^2.4.2",
+    "gatsby": "^2.22.10",
     "gatsby-background-image": "^0.10.2",
     "gatsby-image": "^2.2.43",
     "gatsby-plugin-env-variables": "^1.0.1",
