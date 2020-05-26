@@ -1,5 +1,5 @@
 import React from "react"
-import Tour from "../Tours/Tour"
+import Tour from "../ServiceComponent/Tour"
 import { useStaticQuery, graphql } from "gatsby"
 import Title from "../Title"
 import styles from "../../css/items.module.css"
@@ -46,7 +46,7 @@ const FeaturedTours = () => {
         )}
       </div>
 
-      <AniLink fade to="/tours" className="btn-primary">
+      <AniLink fade to="/services" className="btn-primary">
         more services
       </AniLink>
     </section>

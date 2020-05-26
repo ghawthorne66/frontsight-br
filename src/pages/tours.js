@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Layout from "../components/Layout"
 import StyledHero from "../components/StyledHero"
-import Tours from "../components/Tours/Services"
+import Services from "../components/ServiceComponent/Services"
 import { graphql } from "gatsby"
 import SEO from '../components/SEO'
 
@@ -11,7 +11,7 @@ export default class tours extends Component {
       <Layout>
        <SEO title='Tours' />
         <StyledHero img={this.props.data.defaultBcg.childImageSharp.fluid} />
-        <Tours />
+        <Services />
       </Layout>
     )
   }
