@@ -3,10 +3,10 @@ import { graphql } from "gatsby"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import Layout from "../components/Layout"
 import Banner from "../components/Banner"
+import BannerTwo from "../components/Banner-2"
 import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import Present from "../components/Home/Present"
-
 import StyledHero from "../components/StyledHero"
 import FeaturedTours from "../components/Home/FeaturedTours"
 import SEO from '../components/SEO'

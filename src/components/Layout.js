@@ -29,7 +29,6 @@ const ScrollContainer = ({ setScrollStatus, scrollStatus, children }) => {
 
  const onScroll = () => {
   const scrollTop = scrollable.current.scrollTop
-  console.log('sdfdsfsd')
   setScrollStatus(scrollTop)
 }
 

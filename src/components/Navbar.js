@@ -13,7 +13,7 @@ const Navbar = () => {
 
 
   return (
-   <Sticky>
+  <Sticky>
    <header className={styles.header}>
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>

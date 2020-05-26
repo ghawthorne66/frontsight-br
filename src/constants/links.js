@@ -3,7 +3,6 @@ export default [
   {
     path: "/",
     text: "home",
-    
   },
   
   {
@@ -12,11 +11,11 @@ export default [
   
  },
 
- {
-  path: "/about",
-  // text: "about",
+//  {
+//   path: "/about",
+//   text: "about",
   
- },
+//  },
  
  {
   path: "/blog",
@@ -34,11 +33,11 @@ export default [
   //   text: "pricing",
     
   // },
-  {
-    path: "/prices",
-    // text: "prices",
+  // {
+  //   path: "/prices",
+  //   text: "prices",
     
-  },
+  // },
   {
    path: "/appointment",
    text: "Get a Demo",

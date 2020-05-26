@@ -13,10 +13,7 @@
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
 }
-.wrapper {
- z-index: 2;
- position: relative;
-}
+
 
 * {
   margin: 0;
@@ -31,6 +28,7 @@ body {
   line-height: 1.4;
   font-size: 1rem;
 }
+
 h1,
 h2,
 h3,
@@ -47,6 +45,7 @@ a {
 p {
   margin-bottom: 1.25rem;
 }
+
 .defaultHero {
   min-height: calc(100vh - 62px);
   background: linear-gradient(rgba(0, 112, 74, 0.7), rgba(0, 0, 0, 0.7)),
@@ -54,8 +53,8 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-
 } 
+
 .btn-white,
 .btn-primary {
   text-transform: uppercase;
@@ -90,3 +89,13 @@ main {
   background: var(--primaryColor);
 }
 
+.sticky {
+  z-index: 100;
+}
+
+
+
+/* .wrapper {
+  z-index: 2;
+  position: relative;
+ } */
