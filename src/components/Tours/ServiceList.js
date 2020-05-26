@@ -5,14 +5,14 @@ import Title from "../Title"
 
 export default class TourList extends Component {
  state = {
-  tours: [],
+  services: [],
   sortedTours: []
  }
 
  componentDidMount() {
   this.setState({
-   tours: this.props.tours.edges,
-   sortedTours: this.props.tours.edges
+    services: this.props.services.edges,
+   sortedTours: this.props.services.edges
   })
 
  }

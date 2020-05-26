@@ -14,7 +14,7 @@ export default [
 
  {
   path: "/about",
-  text: "about",
+  // text: "about",
   
  },
  
@@ -34,11 +34,11 @@ export default [
   //   text: "pricing",
     
   // },
-  // {
-  //   path: "/prices",
-  //   text: "prices",
+  {
+    path: "/prices",
+    // text: "prices",
     
-  // },
+  },
   {
    path: "/appointment",
    text: "Get a Demo",
