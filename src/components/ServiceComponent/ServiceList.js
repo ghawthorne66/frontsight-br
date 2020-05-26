@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from "../../css/items.module.css"
-import Tour from "./Tour"
+import Service from "./Service"
 import Title from "../Title"
 
 export default class TourList extends Component {
@@ -22,7 +22,7 @@ export default class TourList extends Component {
     <Title title="our" subtitle="services" />
     <div className={styles.center}>
     {this.state.sortedTours.map(({ node }) => {
-            return <Tour key={node.contentful_id} tour={node} />
+            return <Service key={node.contentful_id} service={node} />
           })}
 
     </div>

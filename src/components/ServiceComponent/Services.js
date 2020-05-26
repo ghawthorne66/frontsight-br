@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const getServices = graphql`
   query {
-    services: allContentfulServicesExample {
+    services: allContentfulServices {
       edges {
         node {
           name

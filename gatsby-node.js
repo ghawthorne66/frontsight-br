@@ -5,7 +5,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const { data } = await graphql(`
     query {
-      tours: allContentfulServicesExample {
+      services: allContentfulServices {
         edges {
           node {
             slug
@@ -21,7 +21,7 @@ exports.createPages = async ({ graphql, actions }) => {
      }
     }
   `)
-  data.tours.edges.forEach(({ node }) => {
+  data.services.edges.forEach(({ node }) => {
     createPage({
       path: `services/${node.slug}`,
       component: path.resolve("./src/templates/services-template.js"),

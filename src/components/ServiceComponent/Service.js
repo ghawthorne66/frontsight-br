@@ -18,11 +18,11 @@ const getImage = graphql`
   }
 `
 
-const Tour = ({tour}) => {
+const Service = ({service}) => {
  const data = useStaticQuery(getImage)
  const img = data.file.childImageSharp.fluid
 
- const { name, price, country, days, slug, images } = tour
+ const { name, price, country, days, slug, images } = service
  console.log(data)
 
  let mainImage = images?images[0].fluid: img
@@ -30,7 +30,7 @@ const Tour = ({tour}) => {
 
 
  return (
- <article className={styles.tour}>
+ <article className={styles.service}>
  <div className={styles.imgContainer} >
  <Image fluid={mainImage} className={styles.img} alt="service image" />
  <AniLink fade className={styles.link} to={`/services/${slug}`}>
@@ -56,8 +56,8 @@ const Tour = ({tour}) => {
 
 
 }
-Tour.propTypes = {
- tour: PropTypes.shape({
+Service.propTypes = {
+  service: PropTypes.shape({
   name:PropTypes.string.isRequired,
   country:PropTypes.string.isRequired,
   price:PropTypes.number.isRequired,
@@ -67,4 +67,4 @@ Tour.propTypes = {
 
  })
 }
-export default Tour
+export default Service

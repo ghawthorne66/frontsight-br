@@ -1,13 +1,13 @@
 import React from "react"
-import Tour from "../ServiceComponent/Tour"
+import Service from "../ServiceComponent/Service"
 import { useStaticQuery, graphql } from "gatsby"
 import Title from "../Title"
 import styles from "../../css/items.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const getTours = graphql`
+const getServices = graphql`
   query {
-   featuredTours: allContentfulServicesExample(filter: {featured: {eq: true}}) {
+   featuredServices: allContentfulServices(filter: {featured: {eq: true}}) {
     edges {
       node {
         name
@@ -30,16 +30,16 @@ const getTours = graphql`
 }
 `
 
-const FeaturedTours = () => {
-  const response = useStaticQuery(getTours)
-  const tours = response.featuredTours.edges
+const FeaturedServices = () => {
+  const response = useStaticQuery(getServices)
+  const services = response.featuredServices.edges
 
   return (
-    <section className={styles.tours}>
+    <section className={styles.services}>
       <Title title="our" subtitle="services" />
       <div className={styles.center}>
-        {tours.map(({ node }) => {
-         return <Tour key={node.contentful_id} tour={node} />
+        {services.map(({ node }) => {
+         return <Service key={node.contentful_id} service={node} />
 
         }
         
@@ -53,4 +53,4 @@ const FeaturedTours = () => {
   )
 }
 
-export default FeaturedTours
+export default FeaturedServices

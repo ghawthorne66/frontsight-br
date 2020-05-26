@@ -75,7 +75,7 @@ const Template = ({ data }) => {
 
 export const query = graphql`
 query ($slug:String!) {
- tour: contentfulServicesExample (slug:{eq:$slug}){
+ tour: contentfulServices (slug:{eq:$slug}){
   name
   price
   country

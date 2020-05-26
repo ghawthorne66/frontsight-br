@@ -8,7 +8,7 @@ import About from "../components/Home/About"
 import Services from "../components/Home/Services"
 import Present from "../components/Home/Present"
 import StyledHero from "../components/StyledHero"
-import FeaturedTours from "../components/Home/FeaturedTours"
+import FeaturedServices from "../components/Home/FeaturedServices"
 import SEO from '../components/SEO'
 
 
@@ -17,20 +17,20 @@ export default ({ data }) => (
   <Layout>
    <SEO title="Home" />
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
-      <Banner
+      <BannerTwo
         title="Digital Marketing for the HVAC Business"
         info=" Tired of wasting money on mediocre results in your marketing? Congratulations, you've found the solution"
       >
         <AniLink fade to="/services" className="btn-white">
           Learn More
         </AniLink>
-      </Banner>
+      </BannerTwo>
     </StyledHero>
    
     <Present />
     <About />
     <Services />
-    <FeaturedTours />
+    <FeaturedServices />
   </Layout>
 )
 export const query = graphql`
