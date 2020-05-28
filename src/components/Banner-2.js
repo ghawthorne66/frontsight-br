@@ -7,7 +7,7 @@ const Banner = ({ title, info, children }) => {
     <div className={styles.banner}>
       <div className={styles.colLeft}>
         <h1>{title}</h1>
-        <p>{info}</p>
+        <h3>{info}</h3>
       </div>
       <div className={styles.colRight}>
         <div className={styles.video}>

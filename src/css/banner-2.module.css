@@ -4,14 +4,13 @@
   display: flex;
   color: var(--mainWhite);
   letter-spacing: var(--mainSpacing);
-  text-align: center;
+  text-align: left;
 }
 .banner  h1 {
   font-size: 2.8em;
   text-align: left;
   text-transform: uppercase;
-  /* padding: 0 5rem; */
-  letter-spacing: 2.5px;
+  letter-spacing: 2.75px;
 }
 .video {
   height: 300px;

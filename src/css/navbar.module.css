@@ -8,7 +8,7 @@
 .logo {
   display: flex;
   position: center;
-  height: 3.25rem;
+  height: 4rem;
 }
 .logo-btn {
   background: transparent;
@@ -20,7 +20,7 @@
 }
 .logo-icon {
   color: var(--primaryColor);
-  font-size: 2.25rem;
+  font-size: 2.5em;
   height: 100%;
   width: 100%;
 }
