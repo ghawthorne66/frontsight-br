@@ -1,3 +1,5 @@
+
+
 .banner {
   display: flex;
   color: var(--mainWhite);
@@ -13,7 +15,7 @@
 }
 .video {
   height: 300px;
-  width: 500px;
+
   background-color: #dcdcdc;
 }
 .colLeft,

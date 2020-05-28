@@ -18,8 +18,8 @@ export default ({ data }) => (
    <SEO title="Home" />
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
       <BannerTwo
-        title="Digital Marketing for the HVAC Business"
-        info=" Tired of wasting money on mediocre results in your marketing? Congratulations, you've found the solution"
+        title="HVAC and Plumbing Marketing Experts"
+        info=" Is your online strategy suffering? Congratulations, you've found the solution"
       >
         <AniLink fade to="/services" className="btn-white">
           Learn More

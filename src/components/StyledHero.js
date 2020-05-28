@@ -5,7 +5,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 const getImage = graphql`
   query {
-    defaultBcg: file(relativePath: { eq: "defaultBcg.jpeg" }) {
+    defaultBcg: file(relativePath: { eq: "HVACR1920x880.png" }) {
       childImageSharp {
         fluid(quality: 90, maxWidth: 4160) {
           ...GatsbyImageSharpFluid_withWebp
@@ -30,10 +30,10 @@ const StyledHero = ({ img, className, children, home }) =>
 }
 
 export default styled(StyledHero)`
-  min-height: ${props => (props.home ? "calc(80vh - 62px)" : "50vh")};
+  min-height: ${props => (props.home ? "calc(90vh - 62px)" : "50vh")};
   background: ${props =>
     props.home
-      ? "linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7))"
+      ? "linear-gradient(rgba(128, 128, 128, .9), rgba(0, 0, 0, 0.7))"
       : "none"};
   background-position: center;
   background-size: cover;
