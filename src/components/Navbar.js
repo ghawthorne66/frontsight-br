@@ -1,10 +1,12 @@
 import React, { useState } from "react"
+import { Link } from 'gatsby'
 import Sticky from 'react-sticky-el';
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import styles from "../css/navbar.module.css"
 import { FaAlignRight } from "react-icons/fa"
 import links from "../constants/links"
 import logo from "../images/banner-logo.png"
+
 const Navbar = () => {
   const [isOpen, setNav] = useState()
   const toggleNav = () => {
@@ -18,7 +20,14 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <img className={styles.logo} src={logo} alt="fronsight logo" />
+        <Link to="/">
+          <img 
+          className={styles.logo}
+           src={logo}
+            alt="fronsight logo"
+             />
+             </Link>
+
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />
           </button>
