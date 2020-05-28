@@ -1,7 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 import BackgroundImage from "gatsby-background-image"
-
 import { useStaticQuery, graphql } from "gatsby"
 
 const getImage = graphql`
@@ -25,12 +24,13 @@ const StyledHero = ({ img, className, children, home }) =>
       fluid={img || data.defaultBcg.childImageSharp.fluid}
       home = {home}>
       {children}
-    </BackgroundImage>
+      </BackgroundImage>
+  
   )
 }
 
 export default styled(StyledHero)`
-  min-height: ${props => (props.home ? "calc(100vh - 62px)" : "50vh")};
+  min-height: ${props => (props.home ? "calc(80vh - 62px)" : "50vh")};
   background: ${props =>
     props.home
       ? "linear-gradient(rgba(63, 208, 212, 0.7), rgba(0, 0, 0, 0.7))"

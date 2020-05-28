@@ -1,5 +1,5 @@
 import React from "react"
-import "./pricesalt.css"
+import "../../css/pricesAlt.module.css"
 import { FaCheck } from "react-icons/fa"
 import { FaWindowMinimize} from "react-icons/fa"
 

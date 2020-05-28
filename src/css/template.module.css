@@ -15,11 +15,23 @@
 .image {
   box-shadow: var(--lightShadow);
 }
-.template h2 {
+.title {
+  font-size: 46px;
   text-transform: capitalize;
   letter-spacing: var(--mainSpacing);
   margin-bottom: 1rem;
+  margin: 2rem 0;
+  color: black;
 }
+
+.name {
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  margin-bottom: 1rem;
+  margin: 2rem 0;
+  color: black;
+} 
+
 .info {
   display: flex;
   flex-wrap: wrap;
@@ -37,14 +49,20 @@
 }
 .desc {
   line-height: 2;
+ 
 }
 .template h4 {
   text-transform: capitalize;
 }
-.template h2 {
-  margin: 2rem 0;
+.button {
+  display: flex;
+  justify-content: center;
 }
+
 .journey {
+  display: grid;
+  justify-content: center;
+  text-align: center;
   margin: 3rem 0;
 }
 @media screen and (min-width: 992px) {

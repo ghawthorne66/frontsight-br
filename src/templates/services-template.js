@@ -12,14 +12,16 @@ import SEO from '../components/SEO'
 const Template = ({ data }) => {
   const {
     name,
+    title,
     price,
     country,
     days,
     description: { description },
     images,
     start,
+    topics,
     journey,
-  } = data.tour
+  } = data.service
 
   const [mainImage, ...tourImages] = images
 
@@ -35,35 +37,39 @@ const Template = ({ data }) => {
                 <Img
                   key={index}
                   fluid={item.fluid}
-                  alt="single tour"
+                  alt="single service"
                   className={styles.image}
                 />
               )
             })}
           </div>
-          <h2>{name}</h2>
+
+          <h1 className={styles.title}> {title}</h1>
+          <h2 className={styles.name}> {name}</h2>
           <div className={styles.info}>
-            <p>
+            {/* <p>
               <FaMoneyBillWave className={styles.icon} />
               starting from ${price}
             </p>
             <p>
               <FaMap className={styles.icon} />
               {country}
-            </p>
+            </p> */}
           </div>
-          <h4>starts on : {start}</h4>
-          <h4>duration : {days} days</h4>
+          {/* <h4>starts on : {start}</h4>
+          <h4>duration : {days} days</h4> */}
           <p className={styles.desc}>{description}</p>
-          <h2>daily schedule</h2>
-          <div className={styles.journey}>
-            {journey.map((item, index) => {
-              return <Day key={index} day={item.day} info={item.info} />
+          <h2 className={styles.name}>Learn More</h2>
+          <div className={styles.topics}>
+            {topics.map((item, index) => {
+              return <Day key={index} day={item.day} subject={item.subject} info={item.info} />
             })}
           </div>
+          <div className={styles.button}>
           <AniLink fade to="/services" className="btn-primary">
             back to services
           </AniLink>
+          </div>
         </div>
       </section>
     </Layout>
@@ -72,8 +78,9 @@ const Template = ({ data }) => {
 
 export const query = graphql`
 query ($slug:String!) {
- tour: contentfulServices (slug:{eq:$slug}){
+ service: contentfulServices (slug:{eq:$slug}){
   name
+  title
   price
   country
   days
@@ -81,8 +88,9 @@ query ($slug:String!) {
   description {
     description
   }
-   journey {
+ topics:journey {
     day
+    subject
     info
   }
   images {

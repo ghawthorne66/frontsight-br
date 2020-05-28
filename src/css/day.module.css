@@ -1,11 +1,13 @@
 .day {
   margin: 2rem 0;
 }
-.day h4 {
+ .day h4 {
+   min-width: 36em;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .btn {
   background: transparent;
   border: none;

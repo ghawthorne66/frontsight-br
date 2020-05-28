@@ -15,3 +15,16 @@
 .post img {
   max-width: 70vw;
 }
+
+.btn-primary {
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+  color: red;
+
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}

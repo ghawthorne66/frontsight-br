@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import { FaAngleDown } from "react-icons/fa"
 import styles from "../../css/day.module.css"
-const Day = ({ day, info }) => {
+
+const Day = ({ day, subject, info }) => {
   const [showInfo, setInfo] = useState(false)
   const toggleInfo = () => {
     setInfo(showInfo => !showInfo)
@@ -10,11 +11,13 @@ const Day = ({ day, info }) => {
     <article className={styles.day}>
       <h4>
         {day}
+        {subject}
         <button className={styles.btn} onClick={toggleInfo}>
           <FaAngleDown />
         </button>
       </h4>
-      {showInfo && <p>{info}</p>}
+      {showInfo &&
+       <p>{info}</p>}
     </article>
   )
 }

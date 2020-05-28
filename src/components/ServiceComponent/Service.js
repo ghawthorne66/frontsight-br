@@ -1,6 +1,6 @@
 import React from "react"
 import Image from "gatsby-image"
-import styles from "../../css/tour.module.css"
+import styles from "../../css/service.module.css"
 import { FaMap } from "react-icons/fa"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from 'prop-types'
@@ -22,7 +22,7 @@ const Service = ({service}) => {
  const data = useStaticQuery(getImage)
  const img = data.file.childImageSharp.fluid
 
- const { name, price, country, days, slug, images } = service
+ const { name, price, title, country, days, slug, images } = service
  console.log(data)
 
  let mainImage = images?images[0].fluid: img
@@ -40,13 +40,12 @@ const Service = ({service}) => {
  <div className={styles.footer}>
  <h3>{name ||'Digital Marketing'}</h3>
  <div className={styles.info}>
- <h4 className={styles.country}>
+ {/* <h4 className={styles.country}>
  <FaMap className={styles.icon} />
  {country || 'USA'}
- </h4>
+ </h4> */}
  <div className={styles.details}>
- <h6>{days} days</h6>
- <h6>from ${price || '0'}</h6>
+ <h6>{title}</h6>
  </div>
  </div>
  </div>
@@ -59,6 +58,7 @@ const Service = ({service}) => {
 Service.propTypes = {
   service: PropTypes.shape({
   name:PropTypes.string.isRequired,
+  title:PropTypes.string.isRequired,
   country:PropTypes.string.isRequired,
   price:PropTypes.number.isRequired,
   day:PropTypes.number.isRequired,

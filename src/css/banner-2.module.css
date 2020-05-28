@@ -5,15 +5,15 @@
   text-align: center;
 }
 .banner  h1 {
-  font-size: 2em;
+  font-size: 2.8em;
   text-align: left;
   text-transform: uppercase;
-  margin-bottom: 1rem;
-  padding: 0 5rem;
-  letter-spacing: 3px;
+  /* padding: 0 5rem; */
+  letter-spacing: 2.5px;
 }
 .video {
   height: 300px;
+  width: 500px;
   background-color: #dcdcdc;
 }
 .colLeft,
@@ -37,9 +37,15 @@ text-align: center;
   }
 }
 
-
 /* 
+.banner {
+  text-align: center;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+}
 .banner h1 {
+  font-size: 3.3rem;
+  text-transform: uppercase;
   margin-bottom: 2rem;
   padding: 0 2rem;
   letter-spacing: 6px;

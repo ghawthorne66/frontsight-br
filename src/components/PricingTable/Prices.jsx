@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-import "./prices.css"
+import "../../css/prices.module.css"
 
 const PricePoint = () => (
   <div className="intro">

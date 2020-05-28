@@ -81,7 +81,7 @@ query ($slug:String!) {
   description {
     description
   }
-   journey {
+   topic:journey {
     day
     info
   }
