@@ -18,9 +18,10 @@
 }
 .logo-btn:hover {
   cursor: pointer;
+  
 }
 .logo-icon {
-  color: var(--primaryColor);
+  
   font-size: 2.5em;
   height: 100%;
   width: 100%;
@@ -62,8 +63,9 @@
   color: var(--primaryColor);
   text-decoration: #000000;
   border-bottom: .07em  solid;
-  
 }
+
+
 .nav-social-links {
   display: none;
 }

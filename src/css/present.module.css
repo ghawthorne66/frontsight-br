@@ -1,9 +1,10 @@
 
 
 .services {
- background: var(--primaryColor);
+ /* background: var(--primaryColor); */
+
  /* background: var(--white); */
- /* padding: 4rem 0; */
+ /* padding: 1rem 0; */
 }
 .center {
  width: 90vw;
@@ -11,6 +12,7 @@
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
  grid-column-gap: 2rem;
+ padding-bottom: 4em;
 }
 .service {
  margin: 2rem 0;
@@ -30,9 +32,16 @@
 .hr {
   
     border: 0;
-    border-top: .8em solid  var(--mainGrey);
+    border-top: .2em solid  var(--mainGrey);
     padding: 4rem 0;
     padding-bottom: 10px;
-   
-  
 }
+
+.orangebg {
+  min-height: calc(50vh - 62px);
+  background: linear-gradient(rgba(112, 67, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("../images/Orange-Wallpaper.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 

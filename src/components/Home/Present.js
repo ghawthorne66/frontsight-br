@@ -15,11 +15,15 @@ class Video extends React.Component {
     
  
     return (
+
+     <container className={styles.orangebg}>
+
      
       <section className={styles.services}>
+
       <div className={styles.hr}></div>
      
-     <Title title="Who We" subtitle="Are" />
+     <Title title="Who We" sub="Are" />
      <div className={styles.center}>
    
       {/* <YouTube className={styles.center}>
@@ -36,6 +40,7 @@ class Video extends React.Component {
       </div>
       
       </section>
+      </container>
     );
   }
  

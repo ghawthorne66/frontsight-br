@@ -1,12 +1,13 @@
 .footer {
   margin-top: auto;
-  background: whitesmoke;
+  background: #333333;
   padding: 2rem;
   text-align: center;
   color: var(--mainWhite);
   
 }
 .links a {
+  color: var(--mainWhite);
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
