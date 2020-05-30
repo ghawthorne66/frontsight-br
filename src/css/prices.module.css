@@ -29,7 +29,7 @@
 }
 
 /* Body */
-body{
+/* body{
   font-family: arial, verdana;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -37,8 +37,8 @@ body{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  /* background:#e74c3c; */
-}
+
+} */
 #container{
   width:80%;
   min-width:1100px;

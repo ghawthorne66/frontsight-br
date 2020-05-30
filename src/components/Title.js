@@ -18,12 +18,12 @@ export default styled(Title)`
   margin-bottom: 2rem;
   h4 {
     text-align: center;
-    letter-spacing: 7px;
+    letter-spacing: 4px;
     color: var(--primaryColor);
   }
   .sub {
     text-align: center;
-    letter-spacing: 7px;
+    letter-spacing: 5px;
     color: white;
   }
   .title {

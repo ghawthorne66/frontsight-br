@@ -1,6 +1,8 @@
 .service {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
+  border: .08rem solid;
+
 }
 .service:hover {
   box-shadow: var(--darkShadow);
@@ -10,6 +12,7 @@
   position: relative;
   background: var(--primaryColor);
   transition: var(--mainTransition);
+ 
 }
 .img {
   transition: var(--mainTransition);
