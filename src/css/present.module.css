@@ -1,9 +1,12 @@
+
+
 .services {
- background: var(--mainGrey);
- padding: 4rem 0;
+ background: var(--primaryColor);
+ /* background: var(--white); */
+ /* padding: 4rem 0; */
 }
 .center {
- width: 80vw;
+ width: 90vw;
  margin: 0 auto;
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -22,4 +25,14 @@
 }
 .service h4 {
  text-transform: uppercase;
+}
+
+.hr {
+  
+    border: 0;
+    border-top: .8em solid  var(--mainGrey);
+    padding: 4rem 0;
+    padding-bottom: 10px;
+   
+  
 }

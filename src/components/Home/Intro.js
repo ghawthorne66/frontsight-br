@@ -1,11 +1,11 @@
 import React from "react"
 import Title from "../Title"
-import styles from "../../css/services.module.css"
-import services from "../../constants/services"
-const Services = () => {
+import styles from "../../css/intro.module.css"
+import services from "../../constants/intro"
+const Intro = () => {
   return (
     <section className={styles.services}>
-      <Title title="our" subtitle="services" />
+      <Title title="Surefire"subtitle="Results" />
       <div className={styles.center}>
         {services.map((item, index) => {
           return (
@@ -21,4 +21,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Intro

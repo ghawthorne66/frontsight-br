@@ -3,12 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.25rem;
+  background-color: #333
 }
 
 .logo {
   display: flex;
   position: center;
-  height: 4rem;
+  height: 6em;
 }
 .logo-btn {
   background: transparent;
@@ -30,11 +31,13 @@
   transition: var(--mainTransition);
   overflow: hidden;
   height: 0;
+ 
 }
 .header {
-  background-color: whitesmoke;
+  /* background-color: whitesmoke; */
   z-index: 100000;
   top: 0;
+  background-color: #333
 }
 
 .nav-bar {
@@ -43,19 +46,23 @@
 }
 
 .nav-links a {
-  display: flex;
+  display: grid;
   padding: 1rem 1.25rem;
   text-decoration: none;
+  /* font-size: 1em; */
   text-transform: capitalize;
-  color: var(--mainBlack);
   transition: var(--mainTransition);
   font-weight: bold;
   justify-content: space-between;
   align-items: center;
+  color: whitesmoke;
+  
 }
 .nav-links a:hover {
   color: var(--primaryColor);
   text-decoration: #000000;
+  border-bottom: .07em  solid;
+  
 }
 .nav-social-links {
   display: none;

@@ -10,6 +10,7 @@ import Present from "../components/Home/Present"
 import StyledHero from "../components/StyledHero"
 import FeaturedServices from "../components/Home/FeaturedServices"
 import SEO from '../components/SEO'
+import Intro from '../components/Home/Intro'
 
 
 export default ({ data }) => (
@@ -17,15 +18,16 @@ export default ({ data }) => (
   <Layout>
    <SEO title="Home" />
     <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
-      <BannerTwo
+      <Banner
         title="HVAC and Plumbing Marketing Experts"
         info=" Is your online strategy suffering? Congratulations, you've found the solution"
       >
         <AniLink fade to="/services" className="btn-white">
           Learn More
         </AniLink>
-      </BannerTwo>
+      </Banner>
     </StyledHero>
+    <Intro />
    
     <Present />
     <About />

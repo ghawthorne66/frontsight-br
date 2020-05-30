@@ -1,6 +1,6 @@
 .services {
-  background: var(--mainGrey);
-  padding: 4rem 0;
+  background: var(--white);
+  padding: 3rem 0;
 }
 .center {
   width: 80vw;
@@ -10,7 +10,7 @@
   grid-column-gap: 2rem;
 }
 .service {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
   text-align: center;
 }
 
@@ -23,10 +23,10 @@
  
 }
 .service span {
-  background: var(--primaryColor);
-  padding: 1.4rem;
+  color: var(--primaryColor); 
+  padding: 1rem;
   display: inline-block;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-bottom: 1.5rem;
 }
 .service h4 {

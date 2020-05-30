@@ -15,9 +15,13 @@ class Video extends React.Component {
     
  
     return (
-     <section className={styles.services}>
+     
+      <section className={styles.services}>
+      <div className={styles.hr}></div>
+     
      <Title title="Who We" subtitle="Are" />
      <div className={styles.center}>
+   
       {/* <YouTube className={styles.center}>
         videoId="watch?v=729oQL9uQVo"
         opts={opts}
@@ -30,6 +34,7 @@ class Video extends React.Component {
           // height='110%'
         />
       </div>
+      
       </section>
     );
   }

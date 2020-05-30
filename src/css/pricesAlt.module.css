@@ -17,7 +17,7 @@
  margin: 0;
  padding: 0;
 }
-.App {
+/* .App {
  font-family: sans-serif;
  text-align: center;
 }
@@ -37,16 +37,16 @@ a:hover,
 a:link,
 a:visited {
  color: #4669cd;
-}
-@media only screen and (max-width: 1024px) {
+} */
+/* @media only screen and (max-width: 1024px) {
  .container {
    width: 95%;
  }
-}
+} */
 
-body {
+/* body {
  font-family: "Open Sans", Arial, sans-serif;
-}
+} */
 /* h1 {
  color: #000;
  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -55,7 +55,7 @@ body {
  line-height: 1.2em;
  margin-bottom: 0.5em;
 } */
-h2 {
+/* h2 {
  font-size: 22px;
 }
 #main {
@@ -70,7 +70,7 @@ h2 {
 .syntaxhighlighter table td.code .container:after,
 .syntaxhighlighter table td.code .container:before {
  content: normal;
-}
+} */
 
 .pricing_plans_before h1,
 .pricing_plans_before h2 {
@@ -256,18 +256,18 @@ a.main_call_to_action:visited {
  font-size: 1.2em;
  margin-bottom: 0;
 }
-.features_summary li {
+/* .features_summary li {
  color: #666;
  font-size: 1.2em;
  padding-bottom: 0.5em;
 
-}
+} */
 
-.container{
+/* .container{
 
  display: inline-block
 
-}
+} */
 .pricing_sub_features h2 {
  color: #333;
  float: left;
@@ -352,7 +352,7 @@ a.main_call_to_action:visited {
  }
 }
 /*==========================*/
-html {
+/* html {
  font-family: sans-serif;
  -webkit-text-size-adjust: 100%;
  -ms-text-size-adjust: 100%;
@@ -513,12 +513,16 @@ optgroup {
 table {
  border-spacing: 0;
  border-collapse: collapse;
-}
-td,
+} */
+
+/* td,
 th {
  padding: 0;
-} /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
-@media print {
+} */
+
+/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
+/* @media print {
  *,
  :after,
  :before {
@@ -613,7 +617,7 @@ th {
 .col-xs-8,
 .col-xs-9 {
   float: left;
-}
+} */
 
 
 
