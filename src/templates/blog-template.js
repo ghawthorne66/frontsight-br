@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import styles from "../css/single-blog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import StyledHero from "../components/StyledHero"
 import SEO from '../components/SEO'
 
 const Blog = ({ data }) => {
@@ -11,6 +12,7 @@ const Blog = ({ data }) => {
     title,
     published,
     text: { json },
+    image,
   } = data.post
   const options = {
     renderNode: {
@@ -51,7 +53,8 @@ const Blog = ({ data }) => {
   }
   return (
     <Layout>
-     <SEO title={title} />
+      <SEO title={title} />
+      <StyledHero img={image.fluid} />
       <section className={styles.blog}>
         <div className={styles.center}>
           <h1>{title}</h1>
@@ -59,14 +62,12 @@ const Blog = ({ data }) => {
           <article className={styles.post}>
             {documentToReactComponents(json, options)}
           </article>
-          <div className={styles.button}>
+          {/* <div className={styles.button}> */}
           <AniLink fade to="/blog" className="btn-primary">
             all posts
           </AniLink>
-          </div>
-
-          
         </div>
+        {/* </div> */}
       </section>
     </Layout>
   )
@@ -80,10 +81,17 @@ export const query = graphql`
       text {
         json
       }
+      image {
+        fluid{
+          src
+         
+        }
+        
+      }
     }
   }
 `
 
 export default Blog
-   
+
 
