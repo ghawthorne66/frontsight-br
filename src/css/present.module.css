@@ -39,9 +39,9 @@
 
 .orangebg {
   min-height: calc(50vh - 62px);
-  background: linear-gradient(rgba(112, 67, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("../images/Orange-Wallpaper.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f5d020;
+background-image: linear-gradient(315deg, #f5d020 0%, #f53803 74%);
 } 

@@ -33,7 +33,8 @@ class Video extends React.Component {
         onStateChange={this._onPlayerStateChange} 
       /></YouTube> */}
       <ReactPlayer className={styles.center}
-          url='https://www.youtube.com/watch?v=iBzvi4h13Ok'
+          url='https://youtu.be/jv4bPm5-bmE'
+          
           // width='110%'
           // height='110%'
         />
