@@ -3,7 +3,6 @@ import "../../css/pricesAlt.module.css"
 import { FaCheck } from "react-icons/fa"
 import { FaWindowMinimize} from "react-icons/fa"
 
-import pic from "./man.jpeg"
 
  export default function App() {
    return (

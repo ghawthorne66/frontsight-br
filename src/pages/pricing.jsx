@@ -1,6 +1,5 @@
 import React from "react"
-import Prices from "../components/PricingTable/Prices"
-
+import Options from "../components/PricingTable/Options"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
@@ -9,7 +8,7 @@ const Pricing = () => (
 
     <SEO title="pricing"/>
   
-    <Prices />
+    <Options />
     
 
 
