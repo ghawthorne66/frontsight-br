@@ -82,7 +82,7 @@ const Options = () => (
               <td><a href="#wordpress-asset-updates" className={styles.priceTableHelp}>
 
                 {/* <i className="far fa-fw fa-question-circle"></i> */} <FaQuestionCircle  />
-                </a> Reputation Management</td>
+                </a>Local Search</td>
               <td><FaTimes /></td>
               <td><FaCheck /></td>
               <td><FaCheck /></td>
@@ -92,7 +92,7 @@ const Options = () => (
               <td><a href="#wordpress-core-updates" className={styles.priceTableHelp}>
                 {/* <i className="far fa-fw fa-question-circle"></i> */}
                 <FaQuestionCircle  />
-                </a>Google My Business</td>
+                </a>Review Marketing</td>
                 <td><FaTimes /></td>
               <td><FaCheck /></td>
               <td><FaCheck /></td>
@@ -102,7 +102,7 @@ const Options = () => (
               <td><a href="#wordpress-security-monitoring" className={styles.priceTableHelp}>
                 {/* <i className="far fa-fw fa-question-circle"></i> */}
                 <FaQuestionCircle  />
-                </a>SEO</td>
+                </a>Paid Advertising</td>
               <td><FaTimes /></td>
               <td><FaCheck /></td>
               <td><FaCheck /></td>
@@ -111,35 +111,32 @@ const Options = () => (
           <tr>
               <td><a href="#wordpress-uptime-monitoring" className={styles.priceTableHelp}>
                 <FaQuestionCircle  />
-                </a> Web Development</td>
+                </a>Local Service Ads</td>
                 <td><FaTimes /></td>
               <td><FaCheck /></td>
               <td><FaCheck /></td>
               <td><FaTimes /></td>
           </tr>
           <tr>
-              <td><a href="#wordpress-malware-cleanup" className={styles.priceTableHelp}>
-                {/* <i className="far fa-fw fa-question-circle"></i> */}
-                <FaQuestionCircle  />
-                </a>Pay Per Click Advertising</td>
-                <td><FaTimes /></td>
-              <td><FaCheck /></td>
-              <td><FaCheck /></td>
-              <td><FaTimes /></td>
-          </tr>
-          <tr>
-              <td><a href="#wordpress-security-audit" className={styles.priceTableHelp}>
-                {/* <i className="far fa-fw fa-question-circle"></i> */}
+              <td><a href="#" className={styles.priceTableHelp}>
                 <FaQuestionCircle  />
                 </a>Social Media</td>
+                <td><FaTimes /></td>
+              <td><FaCheck /></td>
+              <td><FaCheck /></td>
+              <td><FaTimes /></td>
+          </tr>
+          <tr>
+              <td><a href="#" className={styles.priceTableHelp}>
+                <FaQuestionCircle  />
+                </a>Marketing Analytics</td>
               <td><FaTimes /></td>
               <td><FaCheck /></td>
               <td><FaCheck /></td>
               <td><FaTimes /></td>
           </tr>
           <tr>
-              <td><a href="#wordpress-security-audit" className={styles.priceTableHelp}>
-                {/* <i className="far fa-fw fa-question-circle"></i> */}
+              <td><a href="#" className={styles.priceTableHelp}>
                 <FaQuestionCircle  />
                 </a>Email Marketing</td>
               <td><FaTimes /></td>
@@ -148,7 +145,16 @@ const Options = () => (
               <td><FaTimes /></td>
           </tr>
           <tr>
-              <td><a href="#wordpress-priority-support" className="price-table-help">
+              <td><a href="#" className={styles.priceTableHelp}>
+                <FaQuestionCircle  />
+                </a>Rapid Site</td>
+              <td><FaTimes /></td>
+              <td><FaTimes /></td>
+              <td><FaCheck /></td>
+              <td><FaTimes /></td>
+          </tr>
+          <tr>
+              <td><a href="#" className={styles.priceTableHelp}>
                 {/* <i className="far fa-fw fa-question-circle"></i> */}
                 <FaQuestionCircle  />
                 </a> Priority Support</td>
