@@ -5,12 +5,12 @@ export default [
   {
     icon: <FaBullseye />,
     title: "Target your best clients",
-    text: "The more segmentd and specific your audience the better opportunity to maximize your sales while spending less on bad leads. We will research and develop a strategy that best fits your model and budget to get you theleads that you want.",
+    text: "The more segmented and specific your audience the better opportunity to maximize your sales while spending less on bad leads. We will research and develop a strategy that best fits your model and budget to get you the leads that you want.",
   },
   {
     icon: <FaSearchLocation />,
     title: "get found on all search engines",
-    text: "Our local search marketing services will help your business be found by those consumers when they’re searching for a business like yours. Using the latest strategies, we'll help you show up in the right searches and reach your target market." 
+    text: "Our local search marketing services will help your business be found by those consumers when they’re searching for a business like yours. Using the latest strategies, we'll help you show up in the right searches and reach your target market."
   },
   {
     icon: <FaChartLine />,

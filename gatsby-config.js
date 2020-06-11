@@ -8,7 +8,7 @@ module.exports = {
     "Looking for a professional plumber marketing company? Look no further than Front Sight Marketing. Learn more about our web design and pay per click services for hvac and plumbing companies!",
   author: "@toddhagler",
   twitterUsername: "@frontsightseo",
-  image: "/images/fsimages/contractor_marketing_company_small.png",
+  image: "/images/banner-logo.png",
   siteUrl: 'https://frontsightmarketing.com',
  },
  plugins: [
@@ -37,7 +37,7 @@ module.exports = {
     }
   },
   {
-    resolve: `gatsby-plugin-facebook-pixel`,
+    resolve: 'gatsby-plugin-facebook-pixel',
     options: {
       pixelId: '674999336607217',
     },
