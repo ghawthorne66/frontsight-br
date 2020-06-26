@@ -18,8 +18,7 @@ const Template = ({ data }) => {
     days,
     description: { description },
     images,
-    start,
-    topics
+    start
   } = data.service
 
   const [mainImage, ...tourImages] = images
