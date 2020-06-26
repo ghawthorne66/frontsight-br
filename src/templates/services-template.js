@@ -19,15 +19,14 @@ const Template = ({ data }) => {
     description: { description },
     images,
     start,
-    topics,
-    journey,
+    topics
   } = data.service
 
   const [mainImage, ...tourImages] = images
 
   return (
     <Layout>
-     <SEO title={name} />
+      <SEO title={name} />
       <StyledHero img={mainImage.fluid} />
       <section className={styles.template}>
         <div className={styles.center}>
@@ -60,14 +59,10 @@ const Template = ({ data }) => {
           <h4>duration : {days} days</h4> */}
           <p className={styles.desc}>{description}</p>
           <h2 className={styles.name}>Learn More</h2>
-          <div className={styles.topics}>
-            {topics.map((item, index) => {
-              return <Day key={index} day={item.day} subject={item.subject} info={item.info} />
-            })}
-          </div>
+
           <div className={styles.button}>
-          <AniLink fade to="/services" className="btn-primary">
-            back to services
+            <AniLink fade to="/services" className="btn-primary">
+              back to services
           </AniLink>
           </div>
         </div>
@@ -87,11 +82,6 @@ query ($slug:String!) {
   start(formatString: "dddd MMMM Do, YYYY")
   description {
     description
-  }
- topics:journey {
-    day
-    subject
-    info
   }
   images {
     fluid{
