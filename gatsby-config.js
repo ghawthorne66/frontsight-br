@@ -51,7 +51,8 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       },
     },
-    `gatsby-transformer-sharp`,
+    'gatsby-plugin-next-seo',
+      `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
