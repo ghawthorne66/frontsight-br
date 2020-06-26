@@ -46,9 +46,9 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        spaceId: 'qkea7ysuhbqi',
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
-        accessToken: 'Sz6ACu7N67l5UeG4FrZILGpyMWtjJw10C-KCbuw9kRA'
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       },
     },
     `gatsby-transformer-sharp`,
