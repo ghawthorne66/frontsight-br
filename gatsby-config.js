@@ -3,7 +3,7 @@ require('dotenv').config({
 });
 module.exports = {
   siteMetadata: {
-    title: "FrontSight Marketing | Best HVAC and Plumbing SEO Agency",
+    title: "Best HVAC and Plumbing SEO Agency",
     description:
       "Looking for a professional plumber marketing company? Look no further than Front Sight Marketing. Learn more about our web design and pay per click services for hvac and plumbing companies!",
     author: "@toddhagler",
