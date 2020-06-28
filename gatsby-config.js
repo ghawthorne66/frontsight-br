@@ -13,14 +13,36 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: 'gatsby-plugin-sitemap',
       options: {
-        host: 'https://www.frontsightmarketing.com',
-        sitemap: 'https://www.frontsightmarketing.com/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        exclude: ['/pricing', '/prices'],
+        query: `{
+         site {
+           siteMetadata {
+             siteUrl
+           }
+         }
+         allSitePage {
+           edges {
+             node {
+               path
+             }
+           }
+         }
+       }`,
+        serialize: ({ site, allSitePage }) => {
+          let pages = []
+          allSitePage.edges.map(edge => {
+            pages.push({
+              url: site.siteMetadata.siteUrl + edge.node.path,
+              changefreq: `daily`,
+              priority: 0.7,
+            })
+          })
+          return pages
+        },
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
