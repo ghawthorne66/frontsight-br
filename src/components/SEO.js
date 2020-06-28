@@ -17,7 +17,7 @@ const getData = graphql`
   }
 `
 
-const SEO = ({ title, description }) => {
+const SEO = ({ title, description, noindex }) => {
   const { site } = useStaticQuery(getData)
 
   const {
@@ -46,6 +46,14 @@ const SEO = ({ title, description }) => {
       <meta name="twitter:title" content={siteTitle} />
       <meta name="twitter:description" content={siteDesc} />
       <meta name="twitter:image" content={`${siteUrl}${image}`} />
+
+      {
+        noindex == 'yes' && (
+
+            <meta name="robots" content="index,nofollow" />
+            )
+      }
+
     </Helmet>
   )
 }
