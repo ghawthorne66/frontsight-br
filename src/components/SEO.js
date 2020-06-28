@@ -49,8 +49,7 @@ const SEO = ({ title, description, noindex }) => {
 
       {
         noindex == 'yes' && (
-
-            <meta name="robots" content="index,nofollow" />
+            <meta name="robots" content="noindex" />
             )
       }
 
