@@ -9,7 +9,7 @@ module.exports = {
     author: "@toddhagler",
     twitterUsername: "@frontsightseo",
     image: "/images/banner-logo.png",
-    siteUrl: 'https://www.frontsightmarketing.com',
+    siteUrl: 'https://frontsightmarketing.com',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
