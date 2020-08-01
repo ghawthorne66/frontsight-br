@@ -1,0 +1,83 @@
+.primary-mobile-nav {
+  width: 340px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: -340px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  color: #848484;
+  z-index: 9999;
+}
+
+.primary-mobile-nav.open {
+  right: 0;
+}
+
+.primary-mobile-nav {
+  padding: 25px;
+}
+
+.primary-mobile-nav .close-canvas-mobile-panel {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.primary-mobile-nav .close-canvas-mobile-panel:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.primary-mobile-nav .close-canvas-mobile-panel:before,
+.primary-mobile-nav .close-canvas-mobile-panel:after {
+  content: "";
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  left: 14px;
+  top: 0;
+  background-color: #393939;
+}
+
+.primary-mobile-nav .close-canvas-mobile-panel:after {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.primary-mobile-nav ul.menu {
+  padding: 0;
+}
+
+.primary-mobile-nav ul.menu > li {
+  border-bottom: 1px solid #efefef;
+  padding: 15px 0 14px;
+}
+
+.primary-mobile-nav ul.menu li {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.primary-mobile-nav ul.menu li > a {
+  color: #252525;
+  position: relative;
+}
+
+.primary-mobile-nav ul.menu > li > a {
+  font-size: 16px;
+  display: block;
+  padding-right: 20px;
+}
+
+.primary-mobile-nav ul.menu li > a:hover {
+  color: var(--primaryColor);
+}

@@ -1,20 +1,17 @@
 import React from "react"
 import Layout from "../components/Layout"
-import StyledHero from "../components/StyledHero"
-import { graphql } from 'gatsby'
-import BlogList from '../components/Blog/BlogList'
-import SEO from '../components/SEO'
-import BlogBanner from '../components/BlogBanner'
+import { graphql } from "gatsby"
+import BlogList from "../components/Blog/BlogList"
+import SEO from "../components/SEO"
+import defaultImg from "../images/breadcrumb-bg.png"
+import PageBanner from "../components/PageBanner"
 
-
-const blog = ({data}) => {
+const blog = ({ data }) => {
   return (
     <Layout>
-     <SEO title='Blog' />
-     <StyledHero img={data.blogBcg.childImageSharp.fluid} />
-     <BlogBanner title="Blog" />
-
-    <BlogList />
+      <SEO title="Blog" />
+      <PageBanner img={defaultImg} title="Our Blogs" link1="Home" link2="Blog" />
+      <BlogList />
     </Layout>
   )
 }

@@ -5,7 +5,8 @@ import styles from "../css/single-blog.module.css"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import StyledHero from "../components/StyledHero"
-import SEO from '../components/SEO'
+import SEO from "../components/SEO"
+import Sidebar from "../components/Sidebar"
 
 const Blog = ({ data }) => {
   const {
@@ -14,27 +15,25 @@ const Blog = ({ data }) => {
     text: { json },
     image,
   } = data.post
+
   const options = {
     renderNode: {
       "embedded-asset-block": node => {
         return (
-          <div className="rich">
-            <h3>this is awesome image</h3>
-            <img width="400" src={node.data.target.fields.file["en-US"].url} alt={node.data.target.fields.title["en-US"]} />
-            <p>images provided by john doe</p>
+          <div className="">
+            <img
+              width="400"
+              src={node.data.target.fields.file["en-US"].url}
+              alt={node.data.target.fields.title["en-US"]}
+            />
           </div>
         )
       },
       "embedded-entry-block": node => {
         const { title, image, text } = node.data.target.fields
-        console.log(text)
 
         return (
-          <div>
-            <br />
-            <br />
-            <br />
-            <br />
+          <div className="new-post">
             <h1>this is other post : {title["en-US"]}</h1>
             <img
               width="400"
@@ -42,32 +41,36 @@ const Blog = ({ data }) => {
               alt=""
             />
             {documentToReactComponents(text["en-US"])}
-            <br />
-            <br />
-            <br />
-            <br />
           </div>
         )
       },
     },
   }
+
   return (
     <Layout>
       <SEO title={title} />
       <StyledHero img={image.fluid} />
       <section className={styles.blog}>
-        <div className={styles.center}>
-          <h1>{title}</h1>
-          <h4>published at : {published}</h4>
-          <article className={styles.post}>
-            {documentToReactComponents(json, options)}
-          </article>
-          {/* <div className={styles.button}> */}
-          <AniLink fade to="/blog" className="btn-primary">
-            all posts
-          </AniLink>
+        <div className="container">
+          <div className="row">
+            <div className="col-md-8 col-sm-12">
+              <div className="section-title">
+                <h2>{title}</h2>
+              </div>
+              <h6>Published at: {published}</h6>
+              <article className={styles.post}>
+                {documentToReactComponents(json, options)}
+              </article>
+              <AniLink fade to="/blog" className="btn-primary">
+                all posts
+              </AniLink>
+            </div>
+            <div className="col-md-4 col-sm-12">
+              <Sidebar />
+            </div>
+          </div>
         </div>
-        {/* </div> */}
       </section>
     </Layout>
   )
@@ -82,16 +85,12 @@ export const query = graphql`
         json
       }
       image {
-        fluid{
+        fluid {
           src
-         
         }
-        
       }
     }
   }
 `
 
 export default Blog
-
-

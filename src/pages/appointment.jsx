@@ -11,8 +11,7 @@ const Appointment = () => (
 
     <SEO title="appointments"/>
     <h1>Lets Get Started</h1>
-    <CalendlyEmbed className="calendly"account="greghawthorne" eventName="discovery-meeting" />
-
+<iframe  height="700" width="100%" src="https://msgsndr.com/widget/booking/8LtwT0U11nJ6t8j1uo6w" />
 
   </Layout>
 )

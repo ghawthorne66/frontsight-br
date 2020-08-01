@@ -28,9 +28,6 @@ const Services = () => {
   const { services } = useStaticQuery(getServices)
 
   return <ServiceList services={services} />
- 
-  
-  
 }
 
 export default Services

@@ -1,13 +1,18 @@
 import React from "react"
 import Title from "../Title"
 import styles from "../../css/contact.module.css"
+import ContactDetails from "./ContactDetails"
+
 const Contact = () => {
   return (
     <section className={styles.contact}>
-      <Title title="contact" subtitle="us" />
+      <ContactDetails />
       <div className={styles.center}>
-      <form action="https://formspree.io/greg@frontsightmarketing.com" 
-      method="POST" className={styles.form}>
+        <form
+          action="https://formspree.io/greg@frontsightmarketing.com"
+          method="POST"
+          className={styles.form}
+        >
           <div>
             <label htmlFor="name">name</label>
             <input
@@ -20,7 +25,6 @@ const Contact = () => {
           </div>
           <div>
             <label htmlFor="email">email</label>
-
             <input
               type="email"
               name="email"
@@ -31,7 +35,6 @@ const Contact = () => {
           </div>
           <div>
             <label htmlFor="message">message</label>
-
             <textarea
               name="message"
               id="message"

@@ -1,0 +1,35 @@
+.service-detail {
+  padding: 6rem 0;
+}
+
+.section-title {
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  font-weight: 700;
+  color: #222222;
+  font-size: 26px;
+  padding-bottom: 15px;
+  margin: 0;
+  position: relative;
+}
+
+.section-title h2:after {
+  content: "";
+  width: 40px;
+  height: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: var(--primaryColor);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.service-detail p {
+  margin-bottom: 30px;
+  line-height: 2em;
+  font-size: 16px;
+  color: #848484;
+}

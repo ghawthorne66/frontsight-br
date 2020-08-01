@@ -1,0 +1,41 @@
+.blog {
+  box-shadow: var(--lightShadow);
+  transition: var(--mainTransition);
+  background-color: #ffffff;
+}
+.blog:hover {
+  box-shadow: var(--darkShadow);
+}
+
+.img-container {
+  background: var(--primaryColor);
+  transition: var(--mainTransition);
+}
+.img {
+  transition: var(--mainTransition);
+}
+
+.img-container .gatsby-image-wrapper {
+  height: 240px;
+}
+
+.footer {
+  padding: 1rem;
+  text-align: left;
+  background-color: #ffffff;
+}
+
+.blog-title h4 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #222222;
+  font-weight: 700;
+  height: 44px;
+}
+
+.date {
+  margin: 0;
+  margin-bottom: 8px;
+  color: #848484;
+}

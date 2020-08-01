@@ -1,0 +1,74 @@
+/*@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,600i,700");*/
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito", sans-serif;
+  color: #034d79;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  line-height: 1.8;
+}
+
+.btn-white,
+.btn-primary {
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: var(--mainWhite);
+  padding: 0.9rem 1.6rem;
+  display: inline-block;
+  transition: var(--mainTransition);
+  cursor: pointer;
+  border-color: var(--mainWhite);
+  font-weight: 900;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 5px;
+}
+
+.lg-button {
+  font-size: 18px;
+}
+
+.btn-white:hover {
+  background: var(--mainWhite);
+  color: var(--primaryColor);
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  border-radius: 5px;
+}
+
+.btn-primary a,
+a.btn-primary {
+  color: var(--mainWhite);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--primaryColor) !important;
+  border-color: var(--primaryColor);
+}
+
+.btn-primary a:hover {
+  text-decoration: none;
+  color: var(--primaryColor) !important;
+}
+
+a.btn-primary:hover {
+  text-decoration: none;
+  color: var(--primaryColor) !important;
+}

@@ -1,0 +1,64 @@
+.about {
+  padding-top: 110px;
+  padding-bottom: 110px;
+}
+
+.about .container {
+  padding-top: 50px;
+}
+
+.about-company span {
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 300;
+}
+
+.about-company h2 {
+  font-size: 45px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin: 15px 0px 30px 0px;
+  color: #222;
+  font-weight: 600;
+}
+
+.about-img {
+  position: relative;
+  z-index: 2;
+}
+
+.about-img:before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: -50px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: 25px solid rgba(0, 0, 0, 0.1);
+  z-index: -1;
+}
+
+.about-img img {
+  width: 100%;
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .mt-sm-30 {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-img {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .mt-xs-30 {
+    margin-top: 30px;
+  }
+}

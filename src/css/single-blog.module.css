@@ -1,30 +1,37 @@
 .blog {
-  padding: 4rem 0;
+  padding: 6rem 0;
 }
-.center {
-  width: 80vw;
-  margin: 0 auto;
+
+.blog h6 {
+  color: #848484;
 }
-.blog h1,
-.blog h4 {
-  text-transform: capitalize;
-}
+
 .post {
   margin: 2rem 0;
 }
+
+.post h1,
+.post h3,
+.post h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #222;
+}
+
+.post p {
+  color: #222;
+}
+
 .post img {
-  max-width: 70vw;
+  max-width: 100%;
 }
 
-.btn-primary {
-  margin: auto;
-  justify-content: center;
-  text-align: center;
-  color: red;
-
+.post ul {
+  list-style: disc;
+  margin-left: 40px;
+  margin-bottom: 30px;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
+.post ul li p {
+  margin-bottom: 10px;
 }

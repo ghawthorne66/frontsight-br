@@ -1,0 +1,62 @@
+.contact-details {
+  padding-bottom: 60px;
+}
+
+.contact-details h2 {
+  font-size: 40px;
+  margin-top: 0;
+  color: #222;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.contact .icon-circle {
+  border: 1px solid #34ccff;
+  color: #34ccff;
+}
+
+.icon-circle {
+  font-size: 50px;
+  border: 1px solid #d5d5d5;
+  height: 89px;
+  width: 89px;
+  text-align: center;
+  line-height: 89px;
+  margin: 0 auto;
+  border-radius: 100%;
+  display: block;
+}
+
+.icon-circle svg {
+  fill: #34ccff;
+  width: 40px;
+  height: 40px;
+  vertical-align: baseline;
+}
+
+.i-block {
+  display: inline-block;
+  color: #222;
+}
+
+.i-block:hover {
+  color: #34ccff;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.pb-60 {
+  padding-bottom: 60px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}

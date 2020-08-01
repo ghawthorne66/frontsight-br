@@ -15,17 +15,16 @@ const getImage = graphql`
   }
 `
 
-const StyledHero = ({ img, className, children, home }) =>
-  {
+const StyledHero = ({ img, className, children, home }) => {
   const data = useStaticQuery(getImage)
   return (
     <BackgroundImage
       className={className}
       fluid={img || data.defaultBcg.childImageSharp.fluid}
-      home = {home}>
+      home={home}
+    >
       {children}
-      </BackgroundImage>
-  
+    </BackgroundImage>
   )
 }
 
@@ -41,5 +40,4 @@ export default styled(StyledHero)`
   display: flex;
   justify-content: center;
   align-items: center;
-  
 `
