@@ -14,7 +14,7 @@ function PageBanner({ img, title, link1, link2 }) {
             <div className="breadcrumb-text">
               <h1 className="breadcrumb-title">{title}</h1>
               <p>
-                <span>Welcome</span> to our cleaning company
+                <span>Welcome</span> to our Frontsightmarketing
               </p>
             </div>
           </div>
