@@ -33,7 +33,7 @@ function ContactDetails(props) {
             <div class="col-md-4 col-lg-4 pb-xs-30">
               {" "}
               <i class="ion-ios-email icon-circle pos-s">{mailSvg}</i>
-              <a href="mailto:Construc@support.com" class="mt-15 i-block">
+              <a href="mailto:info@frontsightmarketing.com" class="mt-15 i-block">
                 info@frontsightmarketing.com
               </a>{" "}
             </div>

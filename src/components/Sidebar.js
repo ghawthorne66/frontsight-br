@@ -16,10 +16,10 @@ function Sidebar(props) {
             {callSvg}
             <span>Call Us:</span> (855) 979-9216
           </div>
-        {/*  <div className="mf-contact">
+          <div className="mf-contact">
             {mailSvg}
-            <span>Mail Us:</span> Support@frontsight.com
-          </div>*/}
+            <span>Mail Us:</span> info@frontsightmarketing.com
+          </div>
         </div>
       </div>
     </div>
