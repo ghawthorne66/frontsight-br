@@ -8,12 +8,7 @@ function ContactDetails(props) {
       <div class="row">
         <div class="col-md-8 col-lg-8 offset-md-2 text-center">
           <h2>KEEP IN TOUCH</h2>
-          <p class="lead">
-            {" "}
-            Nullam dictum felis eu pede mollis pretium leo eget bibendum sodales
-            augue velit cursus. tellus eget condimentum rhoncus sem quam semper
-            libero.{" "}
-          </p>
+
         </div>
       </div>
       <div class="row">
