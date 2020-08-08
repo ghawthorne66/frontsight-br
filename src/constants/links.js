@@ -39,6 +39,10 @@ export default [
 
   // },
   {
+    path: "/clients",
+    text: "Our Clients",
+  },
+  {
     path: "/appointment",
     text: "Get a Demo",
   },

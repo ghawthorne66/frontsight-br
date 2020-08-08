@@ -1,0 +1,81 @@
+.clients {
+    padding: 0 0 4rem;
+    text-align: center;
+    background-color: #F2F2F2;
+}
+
+.brands-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-start;;
+    flex-wrap: wrap;
+}
+
+.brands-list li {
+    flex: 0 1 18.5%;
+    display: flex;
+    align-items: stretch;
+    margin: .7em 1rem .7em 0;
+}
+
+.brands-list li a {
+    display: flex;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0.5em 2em rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 2.5em 1rem;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.brands-list li img {
+    width: 250px;
+    height: auto;
+}
+
+.cta-area {
+    padding: 4rem;
+    background-color: #267DBF;
+}
+
+.cta-area h1 {
+    color: #fff;
+}
+
+.cta-list {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.cta-area .cta-list li{
+    -ms-flex: 0 1 48%;
+    flex: 0 1 48%;
+    display: flex;
+    align-items: stretch;
+}
+.cta-area .cta-list li a {
+    display: block;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 0.5em 2em rgba(0,0,0,0.3);
+    text-align: center;
+    padding: 2.25em 5%;
+}
+.cta-service-btn{
+    background-color: #ff3300;
+    color: #fff;
+    border:none
+}
+.cta-service-btn:hover{
+    background: #fff;
+    border: 1px solid #ff3300;
+    color: #ff3300;
+}
+.clients-area h1{
+    padding-top: 2rem;
+}
+.cta-area h1{
+    padding: 0.5rem 0 2rem 0;
+}
