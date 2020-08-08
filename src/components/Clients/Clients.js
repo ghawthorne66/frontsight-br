@@ -15,7 +15,7 @@ const Clients = () => (
         </Link></li>
         <li><Link to="/services">
           <h3>Grow</h3>
-          <h4>Your Exciting Business</h4>
+          <h4>Your Existing Business</h4>
           <button type="button" className="btn btn-lg btn-outline-primary cta-service-btn">How Can We Help You</button>
 
         </Link></li>
